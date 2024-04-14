@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Interactive Portfolio</h1>
+    </header>
+    
+    <section id="intro">
+      <h2>Welcome!</h2>
+      <p>This is my interactive portfolio. Scroll down to see my work!</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This is Naitik Kaythwal, an International Undergrad Senior at UofM Graduating May 2024. I'm majoring in Computer Science and Mathematics with a minor in Finance. I'm also currently working Part Time as a Teaching Assistant and a grader for one of my CS professor for COMP 1900 and as a research assistant under a Mechanical Engineer Professor. I'm also a part of the University of Memphis team that manages a $500K TVA investment portfolio where I get to use my Financial as well as technical skill to try and predict the market. I'm passionate about Software Engineering and Machine Learning or generally anything to do with computers. Contact me for collaborations!</p>
+      </section>
+    
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div id="filter-buttons">
+        <button class="filter-button" data-filter="all">All</button>
+        <button class="filter-button" data-filter="portfolio">TVA portfolio management</button>
+        <button class="filter-button" data-filter="research">Mechanical Engineering Research</button>
+        <button class="filter-button" data-filter="grading">Teaching Assistant and Grading</button>
+
+      </div>
+      <div id="gallery">
+        <div class="item portfolio">
+            <div class="overlay">Ranking the entire list of stocks using SQL</div>
+            <img src="images/portfolio.png" alt="Graphic Design Project">
+        </div>
+        <div class="item research">
+            <div class="overlay">Predicting chaotic systems using neural networks</div>
+            <img src="images/Research MEchE.png" alt="Web Design Project">
+        </div>
+        <div class="item grading">
+            <div class="overlay">Grader's POV</div>
+            <img src="images/grader.png" alt="Teaching Assistant">
+        </div>
+    </div>
+    
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+        <p>Contact: <a href="mailto:nkythwal@memphis.edu" style="color: white;">nkythwal@memphis.edu</a> | Phone: 123-456-7890</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
